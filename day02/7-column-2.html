@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>两列布局-子元素都浮动</title>
+  <style>
+    .product {
+      background-color: #cccccc;
+    }
+    .product > div {
+      height: 100px;
+    }
+    .product > div.left {
+      background-color: pink;
+      float: left;
+      width: 200px;
+    }
+    .product > div.right {
+      background-color: teal;
+      width: 300px;
+      margin-left: 200px
+    }
+  </style>
+</head>
+<body>
+  <div class="product">
+    <div class="left"></div>
+    <div class="right"></div>
+  </div>
+</body>
+</html>
